@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="braka.index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Braka</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        * {
+            font-size: 30px;
+        }
+
+        body {
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        img {
+            height: 70px
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="image/al%20sawadi.jpg" />
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="Home.aspx" >Home </a> </li>
+                <li> <a href="Attractions.aspx" > Attractions</a>   </li>
+                <li> <a href="Accommodations.aspx" >Accommodations </a> </li>
+                <li> <a href="Visitor%20informatino.aspx" >Visitor informatino</a> </li>
+                <li> <a href="Contact%20Us.aspx" >Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer>
+        <hr />
+        <p style="text-align: center" > copyright your name ...... </p>
+    </footer>
+
+</body>
+</html>
